@@ -11,12 +11,19 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@fastify/cookie": "^9.3.1",
+    "@fastify/cookie": "^9.4.0",
     "@fastify/formbody": "^7.4.0",
     "@fastify/session": "^10.9.0",
+    "@npmcli/move-file": "^3.0.0",
+    "are-we-there-yet": "^4.0.2",
     "autocannon": "^7.15.0",
-    "fastify": "^4.28.0",
+    "fastify": "^4.28.1",
     "fastify-metrics": "^11.0.0",
+    "gauge": "^5.0.2",
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
+    "npmlog": "^7.0.1",
+    "rimraf": "^6.0.1",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {

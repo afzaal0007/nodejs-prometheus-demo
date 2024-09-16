@@ -65,9 +65,13 @@ fastify.get("/", async (request, reply) => {
   return rows.splice(0, 8);
 });
 
-fastify.listen({ port: 3000 }, (err) => {
-  if (err) throw err;
-  console.log(`server listening on ${fastify.server.address().port}`);
+fastify.listen({ port: 3000, host: '0.0.0.0' }, (err, address) => {
+  if (err) {
+    fastify.log.error(err);
+    process.exit(1);
+  }
+  console.log(`Server listening at ${address}`);
 });
+
 
 await fastify.register(metricsPlugin, { endpoint: "/metrics" });
