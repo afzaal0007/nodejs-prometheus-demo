@@ -24,6 +24,11 @@ npm run dev
 
 Open `http://localhost:3000/` in your browser to view a list of movies.
 
+
+## Prometheus Metrics
+
+http://127.0.0.1:3000/metrics
+
 ## ⚖ Login
 
 curl -X POST http://localhost:3000/login \
